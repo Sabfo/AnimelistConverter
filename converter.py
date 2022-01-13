@@ -8,9 +8,9 @@ def status(list_id):
     elif list_id == 3:
         return 'completed'
     elif list_id == 4:
-        return 'dropped'
-    elif list_id == 5:
         return 'completed'
+    elif list_id == 5:
+        return 'dropped'
 
 with open('anime-list.json', encoding="utf-8") as json_file:
     data = json.load(json_file)
