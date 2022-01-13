@@ -7,7 +7,6 @@ with open('anime-list.json', encoding="utf-8") as json_file:
         el['target_type'] = 'Anime'
         el['status'] = 'completed'
         el['rewatches'] = 0
-        el['score'] = 0
         el['text'] = None
         del el['ya_id']
         del el['list_id']
