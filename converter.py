@@ -15,12 +15,14 @@ def status(list_id):
 with open('anime-list.json', encoding="utf-8") as json_file:
     data = json.load(json_file)
     for el in data:
+        el['target_title'] = el['title']
         el['target_type'] = 'Anime'
         el['status'] = status(el['list_id'])
         el['rewatches'] = 0
         el['text'] = None
         del el['ya_id']
         del el['list_id']
+        del el['title']
         del el['updated_at']
 
 
